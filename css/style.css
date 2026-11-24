@@ -1,0 +1,199 @@
+/* RESET & DASAR (MOBILE-FIRST) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* 1. HEADER & NAVBAR STICKY (FLEXBOX) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b261d;
+  color: #fff;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd166;
+}
+
+/* 2. HERO SECTION & ANIMASI KEYFRAMES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.8rem;
+  font-size: 1.05rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #e07a5f;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+  background-color: #d65a3c;
+  transform: scale(1.03);
+}
+
+/* CONTAINER UMUM */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #8b261d;
+  font-size: 1.8rem;
+}
+
+/* 3. TABEL JADWAL ACARA */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.9rem;
+  text-align: left;
+}
+
+th {
+  background-color: #8b261d;
+  color: #fff;
+}
+
+/* 4. GALERI TENANT (CSS GRID + HOVER TRANSITION & TRANSFORM) */
+.tenant-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 kolom di ponsel */
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-top: 4px solid #e07a5f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #fde8e1;
+  color: #8b261d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+/* 5. FORM PENDAFTARAN */
+.form-daftar {
+  max-width: 550px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom
