@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival Kuliner Bali 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER & NAVBAR STICKY (FLEXBOX) -->
+  <header class="navbar">
+    <div class="logo">Kuliner<span>Bali</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#tenant">Tenant</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION DENGAN FADE-IN (@KEYFRAMES) -->
+    <section id="beranda" class="hero">
+      <div class="hero-content">
+        <span class="hero-tag">27 – 29 November 2026 • Lapangan Renon, Denpasar</span>
+        <h1>Festival Kuliner Bali 2026</h1>
+        <p>Rayakan kekayaan cita rasa autentik Pulau Dewata. Nikmati puluhan hidangan legendaris, jajanan tradisional, dan kopi pilihan langsung dari UMKM terbaik Bali.</p>
+        <div class="hero-buttons">
+          <a href="#daftar" class="btn-cta">Daftar Jadi Tenant</a>
+          <a href="#jadwal" class="btn-secondary">Lihat Jadwal Acara</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TABEL JADWAL ACARA 3 HARI (THEAD, TBODY, ROWSPAN) -->
+    <section id="jadwal" class="container">
+      <div class="section-header">
+        <h2>Jadwal Acara Festival</h2>
+        <h3>Rangkaian kegiatan kuliner dan hiburan budaya selama tiga hari penuh</h3>
+        <br>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Hari & Tanggal</th>
+              <th>Waktu</th>
+              <th>Kegiatan Utama</th>
+              <th>Lokasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2" class="hari-col"><strong>Hari 1</strong><br><span>Jumat, 27 Nov</span></td>
+              <td>10.00 – 12.00 WITA</td>
+              <td>Pembukaan Resmi & Parade Kuliner Tradisional Bali</td>
+              <td>Panggung Utama</td>
+            </tr>
+            <tr>
+              <td>16.00 – 21.00 WITA</td>
+              <td>Bazar Kuliner UMKM & Live Musik Akustik</td>
+              <td>Area Tenant</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="hari-col"><strong>Hari 2</strong><br><span>Sabtu, 28 Nov</span></td>
+              <td>11.00 – 14.00 WITA</td>
+              <td>Demo Masak Lawar Kuwir & Bumbu Base Genep</td>
+              <td>Zona Demo Masak</td>
+            </tr>
+            <tr>
+              <td>17.00 – 22.00 WITA</td>
+              <td>Malam Kuliner Nusantara & Pertunjukan Tari Kecak</td>
+              <td>Panggung Utama</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="hari-col"><strong>Hari 3</strong><br><span>Minggu, 29 Nov</span></td>
+              <td>09.00 – 13.00 WITA</td>
+              <td>Lomba Makan Pedas Sambal Matah & Sambal Embe</td>
+              <td>Zona Kompetisi</td>
+            </tr>
+            <tr>
+              <td>18.00 – 21.00 WITA</td>
+              <td>Penutupan & Penganugerahan Tenant Terfavorit</td>
+              <td>Panggung Utama</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. GALERI TENANT (6 KARTU, CSS GRID, HOVER TRANSITION + TRANSFORM) -->
+    <section id="tenant" class="bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <h2>Daftar Tenant Pilihan</h2>
+          <h3>Sajian kuliner autentik yang siap memanjakan lidah pengunjung</h3>
+          <br>
+        </div>
+        <div class="tenant-grid">
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="Gambar/ayam-betutu.jpg" alt="Ayam Betutu Gilimanuk" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="badge">Makanan Berat</span>
+              <h3>Ayam Betutu Gilimanuk</h3>
+              <p>Ayam kampung utuh yang dimasak perlahan selama 8 jam dengan racikan rempah base genep khas Bali.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="Gambar/lawar_kuwir.jpg" alt="Lawar Kuwir Men Rina" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="badge">Makanan Berat</span>
+              <h3>Lawar Kuwir Men Rina</h3>
+              <p>Perpaduan daging entok cincang, sayur nangka muda, dan kelapa parut bakar dengan bumbu rempah kaya rasa.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="Gambar/sate_lilit.jpg" alt="Sate Lilit Bli Made" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="badge">Makanan Berat</span>
+              <h3>Sate Lilit Bli Made</h3>
+              <p>Olahan ikan tuna laut segar berbumbu rempah yang dililitkan pada batang serai dan dipanggang di atas bara.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="Gambar/jaje_laklak.jpg" alt="Jaje Laklak Penglipuran" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="badge">Jajanan Tradisional</span>
+              <h3>Jaje Laklak Penglipuran</h3>
+              <p>Kue tradisional panggang berbahan tepung beras yang disajikan hangat dengan kelapa parut dan saus gula merah.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="Gambar/es-daluman.jpg" alt="Es Daluman & Loloh Cemcem" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="badge">Minuman Segar</span>
+              <h3>Es Daluman & Loloh Cemcem</h3>
+              <p>Minuman tradisional menyegarkan dari ekstrak daun cincau hijau dan daun cemcem khas Desa Penglipuran.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="Gambar/ki-kintamani.jpg" alt="Kopi Arabika Kintamani" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="badge">Kopi & Minuman</span>
+              <h3>Kopi Arabika Kintamani</h3>
+              <p>Seduhan biji kopi single origin dataran tinggi Kintamani dengan karakter aroma jeruk segar dan keasaman seimbang.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FORM PENDAFTARAN TENANT -->
+    <section id="daftar" class="container">
+      <div class="section-header">
+        <h2>Pendaftaran Tenant UMKM</h2>
+        <p style="text-align: center;">Bergabunglah menjadi bagian dari perhelatan kuliner terbesar di Bali</p>
+      </div>
+      <form class="form-daftar" action="#" method="post">
+        <div class="form-group">
+          <label for="nama_usaha">Nama Usaha *</label>
+          <input type="text" id="nama_usaha" name="nama_usaha" placeholder="Contoh: Warung Nasi Campur Bali" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email *</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="no_hp">Nomor HP / WhatsApp (10–13 digit) *</label>
+          <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,13}" title="Masukkan 10 hingga 13 digit angka tanpa spasi atau tanda hubung" placeholder="081234567890" required>
+        </div>
+
+        <div class="form-group">
+          <label for="kategori">Kategori Kuliner *</label>
+          <select id="kategori" name="kategori" required>
+            <option value="">-- Pilih Kategori Kuliner --</option>
+            <option value="makanan-berat">Makanan Berat</option>
+            <option value="jajanan">Jajanan Tradisional</option>
+            <option value="minuman">Minuman & Kopi</option>
+            <option value="oleh-oleh">Oleh-oleh Kemasan</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pendaftaran Tenant</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align: center;">
+    <p>&copy; 2026 Festival Kuliner Bali. Diselenggarakan di Lapangan Puputan Margarana Renon, Denpasar.</p>
+  </footer>
+
+</body>
+</html>
